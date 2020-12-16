@@ -3,8 +3,14 @@
 
 // do not use the .concat() method. 
 
+const concat = function(arr1, arr2) {
+    for( i = 0; i <= arr2.length-1; i++){
+			arr1.push(arr2[i]);
+		}
+	return arr1;
+} 
 
-// your code here
+
 
 
 console.log(concat([1, 3, 5], [2, 6, 8])); 

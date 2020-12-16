@@ -2,7 +2,18 @@
 
 
 // your code here
-
+const countOnes = function(nestedArr) {
+    let count =0;
+        for(i = 0; i < nestedArr.length; i++){
+            for( b = 0; b < nestedArr[i].length; b++){
+                if(nestedArr[i][b] == 1){
+                    count += 1;
+                }
+            } 
+        }
+            return count   
+}
+        
 
 console.log(countOnes([
     [1, 0],

@@ -2,6 +2,20 @@
 // Return a new (single) array with the largest numbers of each.
 
 //you code here
+const findLargestNums = function(nestedArray){
+    let largestNum = 0;
+    let result =[];
+    for ( i = 0; i < nestedArray.length; i++){
+        for (b = 0; b < nestedArray[i].length; b++){
+            //There are mistakes, but I have no idea what they are.
+            if(nestedArray[i][b] > largestNum){
+                largestNum = nestedArray[i][b];
+            }
+        }
+        result.push(largestNum);
+    }
+    return result;
+}
 
 
 
